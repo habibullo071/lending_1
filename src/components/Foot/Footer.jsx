@@ -3,6 +3,8 @@ import './Footer.scss';
 import maks from '../../img/maks.png';
 import ship from '../../img/ship.png';
 import next from '../../img/next.png';
+import left from '../../img/left.svg';
+import right from '../../img/right.svg';
 
 
 function Footer() {
@@ -11,27 +13,35 @@ function Footer() {
       <div className="top" id='3'>
         <div className="container">
           <h2 className='h2'>PORTFOLIO</h2>
-          <div className="middle">
-            <div className="inform">
-              <div className="left">
-                <div className="img">
-                  <img src={maks} alt="" />
+          <div className="disp">
+            <div className="lft">
+              <img src={left} alt="" />
+            </div>
+            <div className="middle">
+              <div className="inform">
+                <div className="left">
+                  <div className="img">
+                    <img src={maks} alt="" />
+                  </div>
+                </div>
+                <div className="right">
+                  <h4 className='land'>Landing Ice-cream</h4>
+                  <p className='landp'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Donec ut orci eu elit consequat posuere ut sed elit. Nulla
+                    et tristique felis. Morbi quis orci non purus blandit
+                    fringilla. Etiam et mollis eros. Duis venenatis
+                    vulputate lacus, non tristique eros placerat vel.
+                    Nam nec magna lacus. Etiam euismod egestas mauris
+                    nec mollis. Phasellus efficitur et ex vel condimentum.
+                    Cras enim purus, tempor sed massa vel, accumsan
+                    bibendum magna. Nullam hendrerit cursus purus,
+                    sit amet viverra arcu gravida vel.</p>
+                  <a href="#" className='a'>More </a>
                 </div>
               </div>
-              <div className="right">
-                <h4 className='land'>Landing Ice-cream</h4>
-                <p className='landp'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Donec ut orci eu elit consequat posuere ut sed elit. Nulla
-                  et tristique felis. Morbi quis orci non purus blandit
-                  fringilla. Etiam et mollis eros. Duis venenatis
-                  vulputate lacus, non tristique eros placerat vel.
-                  Nam nec magna lacus. Etiam euismod egestas mauris
-                  nec mollis. Phasellus efficitur et ex vel condimentum.
-                  Cras enim purus, tempor sed massa vel, accumsan
-                  bibendum magna. Nullam hendrerit cursus purus,
-                  sit amet viverra arcu gravida vel.</p>
-                <a href="#" className='a'>More </a>
-              </div>
+            </div>
+            <div className="rght">
+              <img src={right} alt="" />
             </div>
           </div>
         </div>
@@ -40,10 +50,10 @@ function Footer() {
         <div className="container">
           <div className="footermid">
             <ul>
-        <li> <a href="#1" className='ahref'>Home</a></li>
-        <li> <a href="#2" className='ahref'>About me</a></li>
-        <li> <a href="#3" className='ahref'>Portfolio</a></li>
-        <li> <a href="#4" className='ahref'>Contact</a></li>
+              <li> <a href="#1" className='ahref'>Home</a></li>
+              <li> <a href="#2" className='ahref'>About me</a></li>
+              <li> <a href="#3" className='ahref'>Portfolio</a></li>
+              <li> <a href="#4" className='ahref'>Contact</a></li>
             </ul>
             <ul>
               <li>Contact:</li>

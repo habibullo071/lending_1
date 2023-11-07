@@ -7,6 +7,27 @@
 ul {
     list-style-type: none;
 }
+.disp{
+    display: flex;justify-content: space-around;
+}
+.lft{
+    text-align: center;
+}
+.lft img{
+    margin:260px auto;
+    width: 60px;
+    background-color: orange;
+    border-radius: 50%;
+}
+.rght{
+    text-align: center;
+}
+.rght img{
+    background-color: orange;
+    border-radius: 50%;
+    margin:260px auto;
+    width: 60px;
+}
 
 .top {
     width: 100%;
@@ -18,7 +39,7 @@ ul {
     max-width: 80%;
     background-color: #414141;
     border-radius: 30px;
-    margin: 50px auto;
+    margin:  auto;
     padding: 50px;
 }
 
