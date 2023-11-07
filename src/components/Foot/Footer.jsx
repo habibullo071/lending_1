@@ -14,10 +14,10 @@ function Footer() {
         <div className="container">
           <h2 className='h2'>PORTFOLIO</h2>
           <div className="disp">
-            <div className="lft">
-              <img src={left} alt="" />
-            </div>
-            <div className="middle">
+            <div id="carouselExample" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                <div className="middle">
               <div className="inform">
                 <div className="left">
                   <div className="img">
@@ -40,9 +40,68 @@ function Footer() {
                 </div>
               </div>
             </div>
-            <div className="rght">
-              <img src={right} alt="" />
+                </div>
+                <div class="carousel-item">
+                <div className="middle">
+              <div className="inform">
+                <div className="left">
+                  <div className="img">
+                    <img src={maks} alt="" />
+                  </div>
+                </div>
+                <div className="right">
+                  <h4 className='land'>Landing Ice-cream</h4>
+                  <p className='landp'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Donec ut orci eu elit consequat posuere ut sed elit. Nulla
+                    et tristique felis. Morbi quis orci non purus blandit
+                    fringilla. Etiam et mollis eros. Duis venenatis
+                    vulputate lacus, non tristique eros placerat vel.
+                    Nam nec magna lacus. Etiam euismod egestas mauris
+                    nec mollis. Phasellus efficitur et ex vel condimentum.
+                    Cras enim purus, tempor sed massa vel, accumsan
+                    bibendum magna. Nullam hendrerit cursus purus,
+                    sit amet viverra arcu gravida vel.</p>
+                  <a href="#" className='a'>More </a>
+                </div>
+              </div>
             </div>
+                </div>
+                <div class="carousel-item">
+                <div className="middle">
+              <div className="inform">
+                <div className="left">
+                  <div className="img">
+                    <img src={maks} alt="" />
+                  </div>
+                </div>
+                <div className="right">
+                  <h4 className='land'>Landing Ice-cream</h4>
+                  <p className='landp'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Donec ut orci eu elit consequat posuere ut sed elit. Nulla
+                    et tristique felis. Morbi quis orci non purus blandit
+                    fringilla. Etiam et mollis eros. Duis venenatis
+                    vulputate lacus, non tristique eros placerat vel.
+                    Nam nec magna lacus. Etiam euismod egestas mauris
+                    nec mollis. Phasellus efficitur et ex vel condimentum.
+                    Cras enim purus, tempor sed massa vel, accumsan
+                    bibendum magna. Nullam hendrerit cursus purus,
+                    sit amet viverra arcu gravida vel.</p>
+                  <a href="#" className='a'>More </a>
+                </div>
+              </div>
+            </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            
           </div>
         </div>
       </div>
@@ -62,7 +121,7 @@ function Footer() {
               <li>Calls: <a href="#" className='ahref'> +7 (900) - 121 - 54 -54</a> </li>
             </ul>
             <ul>
-              <li className='next'><img src={ship} alt="" /> <p>Notitanic</p> <a href="#"><img src={next} alt="" /></a></li>
+              <li className='next'><img src={ship} alt="" /> <p>Notitanic</p> <a className='h' href="#"><img src={next} alt="" /></a></li>
               <li>Copyright © 2021, Notitanic</li>
             </ul>
           </div>
