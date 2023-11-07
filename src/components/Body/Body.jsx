@@ -17,6 +17,7 @@ function Body() {
                 <div className="icons">
                   <img src={icon1} alt="i-1" />
                   <p>Product Design</p>
+                  <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, obcaecati!</b>
                 </div>
                 <div className="icons">
                   <img src={icon2} alt="i-2" />
