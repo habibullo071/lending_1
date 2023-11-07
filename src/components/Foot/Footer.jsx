@@ -1,12 +1,14 @@
 import React from 'react'
 import './Footer.scss';
 import maks from '../../img/maks.png';
+import ship from '../../img/ship.png';
+import next from '../../img/next.png';
 
 
 function Footer() {
   return (
     <div className="footer">
-      <div className="top">
+      <div className="top" id='3'>
         <div className="container">
           <h2 className='h2'>PORTFOLIO</h2>
           <div className="middle">
@@ -28,29 +30,29 @@ function Footer() {
                   Cras enim purus, tempor sed massa vel, accumsan
                   bibendum magna. Nullam hendrerit cursus purus,
                   sit amet viverra arcu gravida vel.</p>
-                <p className='yellow'>More</p>
+                <a href="#" className='a'>More </a>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="botton">
+      <div className="botton" id='4'>
         <div className="container">
           <div className="footermid">
             <ul>
-              <li>home</li>
-              <li>home</li>
-              <li>home</li>
-              <li>home</li>
+        <li> <a href="#1" className='ahref'>Home</a></li>
+        <li> <a href="#2" className='ahref'>About me</a></li>
+        <li> <a href="#3" className='ahref'>Portfolio</a></li>
+        <li> <a href="#4" className='ahref'>Contact</a></li>
             </ul>
             <ul>
-              <li>Inst: notitanic33</li>
-              <li>Inst: notitanic33</li>
-              <li>Inst: notitanic33</li>
-              <li>Inst: notitanic33</li>
+              <li>Contact:</li>
+              <li>Email: <a href="#" className='ahref'>notitanic33@gmail.com</a></li>
+              <li>Instagram: <a href="#" className='ahref'>notitanic33</a></li>
+              <li>Calls: <a href="#" className='ahref'> +7 (900) - 121 - 54 -54</a> </li>
             </ul>
             <ul>
-              <li>Copyright © 2021, Notitanic</li>
+              <li className='next'><img src={ship} alt="" /> <p>Notitanic</p> <a href="#"><img src={next} alt="" /></a></li>
               <li>Copyright © 2021, Notitanic</li>
             </ul>
           </div>

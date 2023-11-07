@@ -6,15 +6,15 @@ import header from '../../img/header.png';
 
 function Header() {
   return (
-    <div className="head">
+    <div className="head" id="1">
       <div className="container">
         <div className="head__top">
           <a href="*"><img src={logo} alt="logo" /></a>
           <div className="links">
-            <a href="*">Home</a>
-            <a href="*">About me</a>
-            <a href="*">Portfolio</a>
-            <a href="*">Contact</a>
+            <a href="#1">Home</a>
+            <a href="#2">About me</a>
+            <a href="#3">Portfolio</a>
+            <a href="#4">Contact</a>
           </div>
         </div>
         <div className="head__bottom">
