@@ -3,8 +3,6 @@ import './Footer.scss';
 import maks from '../../img/maks.png';
 import ship from '../../img/ship.png';
 import next from '../../img/next.png';
-import left from '../../img/left.svg';
-import right from '../../img/right.svg';
 
 
 function Footer() {
