@@ -11,7 +11,7 @@ import icon7 from '../../img/icon-7.png';
 
 function Body() {
   return (
-    <div className='body'>
+    <div className='body' id='2'>
         <div className="container">
             <div className="body__top">
                 <div className="icons">

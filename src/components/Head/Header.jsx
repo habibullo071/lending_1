@@ -13,7 +13,7 @@ function Header() {
   }
 
   return (
-    <div className="head">
+    <div className="head" id="1">
       <div className="container">
         <div className="head__top">
           <a href="*"><img src={logo} alt="logo" /></a>
@@ -21,10 +21,10 @@ function Header() {
             <button onClick={hamburgerOpen}><img src={hamburger} alt="hamburger" /></button>
           </div>
           <div className="links">
-            <a href="*">Home</a>
-            <a href="*">About me</a>
-            <a href="*">Portfolio</a>
-            <a href="*">Contact</a>
+            <a href="#1">Home</a>
+            <a href="#2">About me</a>
+            <a href="#3">Portfolio</a>
+            <a href="#4">Contact</a>
           </div>
         </div>
         <div className="hamburger-links" style={open === true ? {display: "flex"} : {display: "none"}}>
