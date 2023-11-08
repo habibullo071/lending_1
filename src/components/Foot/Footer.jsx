@@ -34,7 +34,7 @@ function Footer() {
                     Cras enim purus, tempor sed massa vel, accumsan
                     bibendum magna. Nullam hendrerit cursus purus,
                     sit amet viverra arcu gravida vel.</p>
-                  <a href="#" className='a'>More </a>
+                  <a href="*" className='a'>More </a>
                 </div>
               </div>
             </div>
@@ -59,7 +59,7 @@ function Footer() {
                     Cras enim purus, tempor sed massa vel, accumsan
                     bibendum magna. Nullam hendrerit cursus purus,
                     sit amet viverra arcu gravida vel.</p>
-                  <a href="#" className='a'>More </a>
+                  <a href="*" className='a'>More </a>
                 </div>
               </div>
             </div>
@@ -84,7 +84,7 @@ function Footer() {
                     Cras enim purus, tempor sed massa vel, accumsan
                     bibendum magna. Nullam hendrerit cursus purus,
                     sit amet viverra arcu gravida vel.</p>
-                  <a href="#" className='a'>More </a>
+                  <a href="*" className='a'>More </a>
                 </div>
               </div>
             </div>
@@ -114,12 +114,12 @@ function Footer() {
             </ul>
             <ul>
               <li>Contact:</li>
-              <li>Email: <a href="#" className='ahref'>notitanic33@gmail.com</a></li>
-              <li>Instagram: <a href="#" className='ahref'>notitanic33</a></li>
-              <li>Calls: <a href="#" className='ahref'> +7 (900) - 121 - 54 -54</a> </li>
+              <li>Email: <a href="*" className='ahref'>notitanic33@gmail.com</a></li>
+              <li>Instagram: <a href="*" className='ahref'>notitanic33</a></li>
+              <li>Calls: <a href="*" className='ahref'> +7 (900) - 121 - 54 -54</a> </li>
             </ul>
             <ul>
-              <li className='next'><img src={ship} alt="" /> <p>Notitanic</p> <a className='h' href="#"><img src={next} alt="" /></a></li>
+              <li className='next'><img src={ship} alt="" /> <p>Notitanic</p> <a className='h' href="*"><img src={next} alt="" /></a></li>
               <li>Copyright © 2021, Notitanic</li>
             </ul>
           </div>
