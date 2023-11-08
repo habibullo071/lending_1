@@ -148,6 +148,7 @@ ul {
 }
 
 .h {
+    transition: 0.4s ease all;
     position: relative;
     margin-top: 10px;
 }
@@ -163,7 +164,10 @@ ul {
     }
 
     .inform {
-        display: block;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .img {
@@ -173,8 +177,9 @@ ul {
     }
 
     .img img {
-        margin: 0 50%;
+        margin: 0 auto;
         max-width: 300px;
+        width: 100%;
     }
 
     .a {

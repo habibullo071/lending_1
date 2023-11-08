@@ -7,8 +7,8 @@ import hamburger from '../../img/hamburgerBtn.svg'
 
 function Header() {
   const [open, setOpen] = useState(false)
-  
-  function hamburgerOpen(){
+
+  function hamburgerOpen() {
     setOpen(open === false ? true : false)
   }
 
@@ -27,12 +27,17 @@ function Header() {
             <a href="#4">Contact</a>
           </div>
         </div>
-        <div className="hamburger-links" style={open === true ? {display: "flex"} : {display: "none"}}>
+        <div className="hamburger-links" style={open === true ? { display: "flex" } : { display: "none" }}>
+          <div className="hamburger-links__left">
+            <img src={header} className='header__img' alt="people" />
+          </div>
+          <div className="hamburger-links__right">
             <a href="*">Home</a>
             <a href="*">About me</a>
             <a href="*">Portfolio</a>
             <a href="*">Contact</a>
           </div>
+        </div>
         <div className="head__bottom">
           <div className="left">
             <b>HELLO</b>
@@ -41,7 +46,7 @@ function Header() {
             <button className="btn">CONTACT ME</button>
           </div>
           <div className="right">
-            <img src={header} alt="people" />
+            <img src={header} className='header__img' alt="people" />
           </div>
         </div>
       </div>

@@ -3,6 +3,7 @@ import './Footer.scss';
 import maks from '../../img/maks.png';
 import ship from '../../img/ship.png';
 import next from '../../img/next.png';
+import { data } from '../../assets/data';
 
 
 function Footer() {
@@ -15,80 +16,50 @@ function Footer() {
             <div id="carouselExample" class="carousel slide">
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                <div className="middle">
-              <div className="inform">
-                <div className="left">
-                  <div className="img">
-                    <img src={maks} alt="" />
+                  <div className="middle">
+                    <div className="inform">
+                      <div className="left">
+                        <div className="img">
+                          <img src={maks} alt="" />
+                        </div>
+                      </div>
+                      <div className="right">
+                        <h4 className='land'>Landing Ice-cream</h4>
+                        <p className='landp'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                          Donec ut orci eu elit consequat posuere ut sed elit. Nulla
+                          et tristique felis. Morbi quis orci non purus blandit
+                          fringilla. Etiam et mollis eros. Duis venenatis
+                          vulputate lacus, non tristique eros placerat vel.
+                          Nam nec magna lacus. Etiam euismod egestas mauris
+                          nec mollis. Phasellus efficitur et ex vel condimentum.
+                          Cras enim purus, tempor sed massa vel, accumsan
+                          bibendum magna. Nullam hendrerit cursus purus,
+                          sit amet viverra arcu gravida vel.</p>
+                        <a href="*" className='a'>More </a>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div className="right">
-                  <h4 className='land'>Landing Ice-cream</h4>
-                  <p className='landp'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Donec ut orci eu elit consequat posuere ut sed elit. Nulla
-                    et tristique felis. Morbi quis orci non purus blandit
-                    fringilla. Etiam et mollis eros. Duis venenatis
-                    vulputate lacus, non tristique eros placerat vel.
-                    Nam nec magna lacus. Etiam euismod egestas mauris
-                    nec mollis. Phasellus efficitur et ex vel condimentum.
-                    Cras enim purus, tempor sed massa vel, accumsan
-                    bibendum magna. Nullam hendrerit cursus purus,
-                    sit amet viverra arcu gravida vel.</p>
-                  <a href="*" className='a'>More </a>
-                </div>
-              </div>
-            </div>
-                </div>
-                <div class="carousel-item">
-                <div className="middle">
-              <div className="inform">
-                <div className="left">
-                  <div className="img">
-                    <img src={maks} alt="" />
-                  </div>
-                </div>
-                <div className="right">
-                  <h4 className='land'>Landing Ice-cream</h4>
-                  <p className='landp'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Donec ut orci eu elit consequat posuere ut sed elit. Nulla
-                    et tristique felis. Morbi quis orci non purus blandit
-                    fringilla. Etiam et mollis eros. Duis venenatis
-                    vulputate lacus, non tristique eros placerat vel.
-                    Nam nec magna lacus. Etiam euismod egestas mauris
-                    nec mollis. Phasellus efficitur et ex vel condimentum.
-                    Cras enim purus, tempor sed massa vel, accumsan
-                    bibendum magna. Nullam hendrerit cursus purus,
-                    sit amet viverra arcu gravida vel.</p>
-                  <a href="*" className='a'>More </a>
-                </div>
-              </div>
-            </div>
-                </div>
-                <div class="carousel-item">
-                <div className="middle">
-              <div className="inform">
-                <div className="left">
-                  <div className="img">
-                    <img src={maks} alt="" />
-                  </div>
-                </div>
-                <div className="right">
-                  <h4 className='land'>Landing Ice-cream</h4>
-                  <p className='landp'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Donec ut orci eu elit consequat posuere ut sed elit. Nulla
-                    et tristique felis. Morbi quis orci non purus blandit
-                    fringilla. Etiam et mollis eros. Duis venenatis
-                    vulputate lacus, non tristique eros placerat vel.
-                    Nam nec magna lacus. Etiam euismod egestas mauris
-                    nec mollis. Phasellus efficitur et ex vel condimentum.
-                    Cras enim purus, tempor sed massa vel, accumsan
-                    bibendum magna. Nullam hendrerit cursus purus,
-                    sit amet viverra arcu gravida vel.</p>
-                  <a href="*" className='a'>More </a>
-                </div>
-              </div>
-            </div>
-                </div>
+                {
+                  data && data.map((e, i) => (
+                    <div key={i} class="carousel-item">
+                      <div className="middle">
+                        <div className="inform">
+                          <div className="left">
+                            <div className="img">
+                              <img src={maks} alt="" />
+                            </div>
+                          </div>
+                          <div className="right">
+                            <h4 className='land'>{e.title}</h4>
+                            <p className='landp'>{e.text}</p>
+                            <a href="*" className='a'>More  →</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  ))
+                }
               </div>
               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -99,7 +70,7 @@ function Footer() {
                 <span class="visually-hidden">Next</span>
               </button>
             </div>
-            
+
           </div>
         </div>
       </div>
@@ -114,9 +85,9 @@ function Footer() {
             </ul>
             <ul>
               <li>Contact:</li>
-              <li>Email: <a href="*" className='ahref'>notitanic33@gmail.com</a></li>
+              <li>Email: <a href="*" className='ahref'>test@gmail.com</a></li>
               <li>Instagram: <a href="*" className='ahref'>notitanic33</a></li>
-              <li>Calls: <a href="*" className='ahref'> +7 (900) - 121 - 54 -54</a> </li>
+              <li>Calls: <a href="*" className='ahref'> +998 (90) 123-45-67</a> </li>
             </ul>
             <ul>
               <li className='next'><img src={ship} alt="" /> <p>Notitanic</p> <a className='h' href="*"><img src={next} alt="" /></a></li>
