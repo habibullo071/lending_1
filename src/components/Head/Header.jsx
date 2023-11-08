@@ -1,15 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Header.scss";
 
 import logo from "../../img/logo.svg";
 import header from '../../img/header.png';
+import hamburger from '../../img/hamburgerBtn.svg'
 
 function Header() {
+  const [open, setOpen] = useState(false)
+  
+  function hamburgerOpen(){
+    setOpen(open === false ? true : false)
+  }
+
   return (
     <div className="head">
       <div className="container">
         <div className="head__top">
           <a href="*"><img src={logo} alt="logo" /></a>
+          <div className="hamburger">
+            <button onClick={hamburgerOpen}><img src={hamburger} alt="hamburger" /></button>
+          </div>
           <div className="links">
             <a href="*">Home</a>
             <a href="*">About me</a>
@@ -17,6 +27,12 @@ function Header() {
             <a href="*">Contact</a>
           </div>
         </div>
+        <div className="hamburger-links" style={open === true ? {display: "flex"} : {display: "none"}}>
+            <a href="*">Home</a>
+            <a href="*">About me</a>
+            <a href="*">Portfolio</a>
+            <a href="*">Contact</a>
+          </div>
         <div className="head__bottom">
           <div className="left">
             <b>HELLO</b>
